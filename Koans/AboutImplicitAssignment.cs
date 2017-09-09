@@ -3,15 +3,8 @@ using DotNetCoreKoans.Engine;
 
 namespace DotNetCoreKoans.Koans
 {
-    public class AboutArrayAssignment : Koan
+    public class AboutImplicitAssignment : Koan
     {
-        //Parallel Assignments are a feature in Ruby which allow one
-        //to set multiple variables at once using an array syntax. e.g.
-        //first_name, last_name = ["John", "Smith"]
-        //which would set first_name == "John" and last_name == "Smith"
-        //This isn't available in C#, but there are a few interesting assignment
-        //tricks we can pick up.
-
         [Step(1)]
         public void ImplicitAssignment()
         {

@@ -9,15 +9,15 @@ namespace DotNetCoreKoans.Koans
         {
             Types = new Type[] {
 				typeof(AboutVariables),
-				typeof(AboutAsserts),
-				typeof(AboutNull),
-				typeof(AboutArrays),
-				typeof(AboutArrayAssignment),
-				typeof(AboutStrings),
-                typeof(AboutFloats),
+	            typeof(AboutImplicitAssignment),
+				// typeof(AboutAsserts),
+	            typeof(AboutStrings),
+	            typeof(AboutFloats),
+	            typeof(AboutControlStatements),
+	            typeof(AboutArrays),
+	            typeof(AboutNull),
 				typeof(AboutInheritance),
                 typeof(AboutMethods),
-                typeof(AboutControlStatements),
                 typeof(AboutGenericContainers),
 		typeof(AboutBitwiseAndShiftOperator)
                 //TODO: disabled due to missing functionality in netcoreapp1.0
