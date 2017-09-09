@@ -8,6 +8,7 @@ namespace DotNetCoreKoans.Koans
         public PathToEnlightenment()
         {
             Types = new Type[] {
+				typeof(AboutVariables),
 				typeof(AboutAsserts),
 				typeof(AboutNull),
 				typeof(AboutArrays),
