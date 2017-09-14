@@ -51,5 +51,25 @@ namespace DotNetCoreKoans.Koans
 
             Assert.Throws(typeof(FillMeIn), () => fibonacci[99]);
         }
+
+        [Step(5)]
+        public void AnArrayofArrays_AndYouHaveAMatrix()
+        {
+            var threeByThree = new int[3, 3]
+            {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+            };
+    
+            Assert.Equal(1, threeByThree[0, 0]);
+            Assert.Equal(5, threeByThree[1, 1]);
+            Assert.Equal(9, threeByThree[2, 2]);
+            
+            Assert.Equal(6, threeByThree[FILL_ME_IN, FILL_ME_IN]);
+            Assert.Equal(7, threeByThree[FILL_ME_IN, FILL_ME_IN]);
+        }
+        
+        
     }
 }

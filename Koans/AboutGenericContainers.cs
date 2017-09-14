@@ -296,26 +296,5 @@ namespace DotNetCoreKoans.Koans
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("uno"));
 			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("dos"));
 		}
-		[Step(29)]
-		public void f()
-		{
-			Dictionary<string, int> one = new Dictionary<string, int>();
-			one["jim"] = 53;
-			one["amy"] = 20;
-			one["dan"] = 23;
-
-			Dictionary<string, int> two = new Dictionary<string, int>();
-			two["jim"] = 54;
-			two["jenny"] = 26;
-
-			foreach (KeyValuePair<string, int> item in two)
-			{
-				one[item.Key] = item.Value;
-			}
-
-			Assert.Equal(FILL_ME_IN, one["jim"]);
-			Assert.Equal(FILL_ME_IN, one["jenny"]);
-			Assert.Equal(FILL_ME_IN, one["amy"]);
-		}
 	}
 }

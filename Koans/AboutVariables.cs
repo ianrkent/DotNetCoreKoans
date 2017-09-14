@@ -101,5 +101,14 @@ namespace DotNetCoreKoans.Koans
             
             Assert.Equal(variableDefinedAsString, variableImplicitlyDeterminedToBeAString);
         }
+        
+        [Step(9)]
+        public void MultipleAssignmentsOnSingleLine()
+        {
+            //You can do multiple assignments on one line, but only with explicit types! 
+            string firstName = "John", lastName = "Smith";
+            Assert.Equal(FILL_ME_IN, firstName);
+            Assert.Equal(FILL_ME_IN, lastName);
+        }
     }
 }
