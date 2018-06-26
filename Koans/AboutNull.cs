@@ -55,5 +55,26 @@ namespace DotNetCoreKoans.Koans
             object obj = null;
             Assert.True(obj.Equals(null));
         }
+
+        [Step(6)]
+        public void NullableTypes()
+        {
+            int i = 0;
+            //i = null; //You can't do this
+
+            int? nullableInt = null; //but you can do this
+            Assert.NotNull(FILL_ME_IN);
+            Assert.Null(FILL_ME_IN);
+        }
+
+        [Step(7)]
+        public void AssignIfNullOperator()
+        {
+            int? nullableInt = null;
+
+            int x = nullableInt ?? 42;
+
+            Assert.Equal(FILL_ME_IN, x);
+        }
     }
 }
